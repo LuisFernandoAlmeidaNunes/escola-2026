@@ -13,3 +13,33 @@
     REFERENCES `offer` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
+
+    INSERT INTO resource
+    (title, description, position, imgUri, type, offer_id)
+    VALUES
+    ('Introdução ao Java',
+     'Primeiros passos na linguagem Java',
+     1,
+     'img/java-intro.png',
+     'LESSON',
+     1);
+
+    INSERT INTO resource
+    (title, description, position, imgUri, type, offer_id)
+    VALUES
+    ('Fundamentos do Spring Boot',
+     'Criação de APIs REST com Spring Boot',
+     1,
+     'img/spring-api.png',
+     'LESSON',
+     2);
+
+    INSERT INTO resource
+    (title, description, position, imgUri, type, offer_id)
+    VALUES
+    ('Componentes React',
+     'Criação e reutilização de componentes',
+     1,
+     'img/react-components.png',
+     'LESSON',
+     3);
